@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Noah Sushi | Baja California Sur</title
+	<link rel="icon" type="image/svg+xml" href="favicon2.svg" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <!-- Colores personalizados de Noah Sushi -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'noah-green': '#1b3c2b',
+                        'noah-gold': '#e6b800',
+                        'noah-white': '#fffdfa',
+                        'noah-gray': '#f5f5f4',
+                        'noah-black': '#232323'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-noah-gray text-noah-black font-sans">
+
+    <!-- Encabezado -->
+    <!-- Header -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-md shadow-md z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-3xl font-bold text-gray-800 flex items-center">
+                    Noah Sushi
+                    <span class="text-red-500 ml-2">🍣</span>
+            </div>
+            <ul class="flex gap-6 text-noah-green font-semibold">
+                <li><a href="#inicio" class="hover:text-noah-gold transition">Inicio</a></li>
+                <a href="https://drive.google.com/file/d/1Z6eajPIg23jegj5nz9R5X72syTvPZf9t/view" target="_blank" class="text-gray-700 hover:text-red-600">Menú</a>
+                <li><a href="#ubicacion" class="hover:text-noah-gold transition">Ubicación</a></li>
+                <li><a href="#contacto" class="hover:text-noah-gold transition">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero principal -->
+    <section id="inicio" class="relative bg-noah-green text-noah-white">
+        <div class="container mx-auto flex flex-col md:flex-row items-center py-12 px-4 gap-8">
+            <div class="flex-1">
+                <h1 class="text-4xl md:text-5xl font-extrabold mb-4">¡El mejor sushi de Los Cabos!</h1>
+                <p class="text-lg mb-6">Frescura, sabor y tradición japonesa en Los Cabos.</p>
+                <a href="#menu" class="inline-block bg-noah-gold text-noah-black font-bold px-6 py-3 rounded-full shadow hover:bg-yellow-400 transition">Ver Menú</a>
+            </div>
+            <div class="flex-1 flex justify-center">
+                <img src="https://scontent.fsjd2-1.fna.fbcdn.net/v/t39.30808-6/490315381_1074117068069554_1974415026275871482_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=qXm48_Y_jh4Q7kNvwEBwD6k&_nc_oc=Adk-_P4dgfW5-Q1CohWIuS7T-7dm4VZQEDfqt0wdmtsAunhHZZHCwfCshSwZ-Vd7794kSLY0zKonZtAs3ib3b2Tb&_nc_zt=23&_nc_ht=scontent.fsjd2-1.fna&_nc_gid=q45HaWQJq2UNsGjPG5N2Ow&oh=00_AfLIOaM3On1BEBuF0xOLXhz1NvKD6p1w2rbJPhK257BR-g&oe=683FD4EF" alt="Sushi Noah" class="rounded-3xl shadow-lg w-full max-w-xs"/>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menú destacado -->
+    <section id="menu" class="container mx-auto py-16 px-4">
+        <h2 class="text-3xl font-bold text-noah-green mb-8 text-center">Menú</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Plato 1 -->
+            <div class="bg-noah-white rounded-xl shadow p-6 flex flex-col items-center">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipOzePhEi_v3et3e7weBxC4cucHEDzAw1PvjzHh3=s680-w680-h510-rw" alt="Rollos Empanizados" class="w-50 h-50 object-cover rectangular-full mb-4"/>
+                <h3 class="text-xl font-semibold text-noah-green mb-2">California Roll</h3>
+                <p class="text-center text-noah-black">Cangrejo, aguacate y pepino envueltos en arroz y alga nori, cubierto con ajonjolí.</p>
+            </div>
+            <!-- Plato 2 -->
+            <div class="bg-noah-white rounded-xl shadow p-6 flex flex-col items-center">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipP-4zk446bXyik__0I-pOX3ZOIqQoHE47yGxquM=s680-w680-h510-rw" alt="Rollos Naturales" class="w-50 h-50 object-cover rectangular-full mb-4"/>
+                <h3 class="text-xl font-semibold text-noah-green mb-2">Sashimi de Salmón</h3>
+                <p class="text-center text-noah-black">Finas láminas de salmón fresco, acompañadas de salsa de soya y wasabi.</p>
+            </div>
+            <!-- Plato 3 -->
+            <div class="bg-noah-white rounded-xl shadow p-6 flex flex-col items-center">
+                <img src="https://lh3.googleusercontent.com/p/AF1QipMOcAZNRsjaEs6E5gJRUofsswuNfpoFMzNqtUEe=s680-w680-h510-rw" alt="Especialidades" class="w-50 h-50 object-cover rectangular-full mb-4"/>
+                <h3 class="text-xl font-semibold text-noah-green mb-2">Tempura Roll</h3>
+                <p class="text-center text-noah-black">Rollo de camarón tempura, aguacate y queso crema, frito y servido con salsa especial.</p>
+            </div>
+        </div>
+    </section>
+	 <!-- Promociones -->
+  <section id="promociones" class="bg-noah-white py-16 px-4">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-bold text-noah-green mb-8">Promociones Especiales</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Promo 1 -->
+        <div class="bg-noah-gray p-6 rounded-xl shadow-md flex flex-col items-center">
+          <img src="https://www.facebook.com/reel/689404344054830/?s=single_unit&__cft__[0]=AZVDwYfqabHHm4-Bq9zruOkjQZ1eseAkBf12oB4_PDMUD444lq49YMhLpFmBVunRVWs_HZP6HtxlURhDW-IlK40TkRSTerR-4E0nNecCGEnZpsFUr_S-kdxNqIzkmgMwj3tIqjhUKBbxtZO21XnIEZMkop4IrHJcIeNdOCM00VAeaVd5kTV0A9p_zGM-QTZmCBdqjLYh8Ob9xqFWUdL6h8iT&__tn__=H-R" alt="Yakimeshi"
+               class="rounded-lg shadow mb-4 w-full h-60 object-cover">
+          <h3 class="text-xl font-semibold text-noah-green mb-2">Combo 2x1 en Yakimeshi</h3>
+          <p class="mb-4 text-noah-black">Disfruta tus rollos favoritos al 2x1 en consumo local.</p>
+          <a href="https://wa.me/5551721942" target="_blank"
+             class="bg-noah-gold text-noah-black font-bold px-6 py-2 rounded-full hover:bg-yellow-400 transition">Pedir ahora</a>
+        </div>
+        <!-- Promo 2 -->
+        <div class="bg-noah-gray p-6 rounded-xl shadow-md flex flex-col items-center">
+          <img src="https://scontent.fsjd2-1.fna.fbcdn.net/v/t51.75761-15/486662771_18304561792236151_5019907628084363723_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=35Yy6T4cBa0Q7kNvwFi1SWz&_nc_oc=Adkw8-rmhkCa7Zoo55rwa2N4-nL7_0ev72AoMbqwzKGS2faPjJGh0y0cMPzEaRXo6scyOxdeQZYR0Ypmsn_K8I30&_nc_zt=23&_nc_ht=scontent.fsjd2-1.fna&_nc_gid=lmurGrWycVAQ9wVJkJr7lA&oh=00_AfL5wCOydPcj6W1ihQNPkvThiZ1WLwgukMI6V_NNR_-q0w&oe=683FF492" alt="Rollos" 
+               class="rounded-lg shadow mb-4 w-full h-full object-cover">
+          <h3 class="text-xl font-semibold text-noah-green mb-2">Combo 3x2 en Rollos </h3>
+          <p class="mb-4 text-noah-black">Aplica solamente al rollo mas barato en la seccion de Rollos Empanizados y Naturales, Refil gratis. </p>
+          <a href="#menu" class="bg-noah-gold text-noah-black font-bold px-6 py-2 rounded-full hover:bg-yellow-400 transition">Ver menú</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Sección Ubicación -->
+<section id="ubicacion" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Nuestras Ubicaciones</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-4">Sucursal Zacatal</h3>
+                <p class="text-gray-600 mb-4">San José del Cabo, Zacatal</p>
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.8876234567891!2d-109.71309521234567!3d23.098841712345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af5bef00f5d837%3A0xef9825a64c3ebf8d!2sNoah%20Sushi%20Sucursal%20Zacatal!5e0!3m2!1ses!2smx!4v1234567890!5m2!1ses!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-4">Sucursal Rosarito</h3>
+                <p class="text-gray-600 mb-4">San José del Cabo, Rosarito</p>
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.8876234567891!2d-109.70923931234567!3d23.067045012345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af5a7ea469c4e7%3A0x5fa09395bf26bb8f!2sNoah%20Sushi%20Sucursal%20Rosarito!5e0!3m2!1ses!2smx!4v1234567890!5m2!1ses!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="container mx-auto py-16 px-4">
+        <h2 class="text-3xl font-bold text-noah-green mb-8 text-center">Contáctanos</h2>
+        <form class="max-w-xl mx-auto bg-noah-white rounded-xl shadow p-8 space-y-6">
+            <div>
+                <label for="nombre" class="block text-noah-green font-semibold mb-2">Nombre</label>
+                <input id="nombre" name="nombre" type="text" required class="w-full border border-noah-green rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-noah-gold"/>
+            </div>
+            <div>
+                <label for="correo" class="block text-noah-green font-semibold mb-2">Correo electrónico</label>
+                <input id="correo" name="correo" type="email" required class="w-full border border-noah-green rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-noah-gold"/>
+            </div>
+            <div>
+                <label for="mensaje" class="block text-noah-green font-semibold mb-2">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required class="w-full border border-noah-green rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-noah-gold"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-noah-green text-noah-white font-bold py-3 rounded-full hover:bg-noah-gold hover:text-noah-black transition">Enviar mensaje</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-noah-green text-noah-white py-8">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4 px-4">
+            <div class="flex items-center gap-2">
+                <img src="https://i.imgur.com/8Km9tLL.png" alt="Logo Noah Sushi" class="h-8 w-8 rounded-full"/>
+                <span class="font-bold">Noah Sushi</span>
+            </div>
+            <div class="flex gap-4 text-xl">
+                <a href="https://facebook.com/noahsushibcs" target="_blank" rel="noopener" aria-label="Facebook" class="hover:text-noah-gold"><i class="fab fa-facebook"></i></a>
+                <a href="https://instagram.com/noahsushibcs" target="_blank" rel="noopener" aria-label="Instagram" class="hover:text-noah-gold"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/5216241234567" target="_blank" rel="noopener" aria-label="WhatsApp" class="hover:text-noah-gold"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <div class="text-sm">
+                <span><i class="fas fa-phone-alt mr-1"></i> (624) 123 4567</span>
+                <span class="mx-2">|</span>
+                <span><i class="fas fa-envelope mr-1"></i> contacto@noahsushi.com</span>
+            </div>
+        </div>
+        <div class="text-center text-xs mt-4 text-noah-gray">
+            © 2024 Noah Sushi. Todos los derechos reservados.
+        </div>
+    </footer>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/5551721942"
+        class="fixed z-50 bottom-6 right-6 bg-noah-green hover:bg-noah-gold text-white rounded-full shadow-lg p-4 flex items-center justify-center transition"
+        target="_blank" rel="noopener" aria-label="Pedir por WhatsApp">
+         <i class="fab fa-whatsapp text-3xl"></i>
+    </a>
+</body>
+
+
+</html>
