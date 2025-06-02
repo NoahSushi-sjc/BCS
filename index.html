@@ -1,55 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noah Sushi - Auténtico Sushi en San José del Cabo</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Noah Sushi | Auténtica Experiencia Japonesa en Los Cabos</title>
 	<link rel="icon" type="image/svg+xml" href="favicon2.svg" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <script>
-	
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'noah-red': '#9B2226',
-                        'noah-black': '#1B1B1B',
-                        'noah-gold': '#CA8A04',
-                        'noah-white': '#F5F5F5'
+                        'noah-red': '#9b2226',
+                        'noah-black': '#001219',
+                        'noah-gold': '#ca6702',
+                        'noah-white': '#f8f9fa'
                     }
                 }
             }
         }
     </script>
 </head>
-<body class="font-sans bg-noah-white">
-    <!-- Encabezado -->
-    <header class="bg-noah-black shadow-md fixed w-full z-50">
-        <nav class="container mx-auto px-6 py-3">
+<body class="bg-noah-white text-noah-black font-sans">
+    <!-- Header Minimalista -->
+    <header class="fixed w-full bg-noah-white/90 backdrop-blur-md shadow-sm z-50">
+        <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <div class="text-2xl font-bold text-noah-gold">Noah Sushi</div>
-                <div class="hidden md:flex space-x-8">
-                    <a href="#inicio" class="text-noah-white hover:text-noah-gold transition duration-300">Inicio</a>
-                    <a href="https://drive.google.com/file/d/1Z6eajPIg23jegj5nz9R5X72syTvPZf9t/view" target="_blank" class="text-noah-white hover:text-noah-gold transition duration-300">Menú</a>
-                    <a href="#ubicacion" class="text-noah-white hover:text-noah-gold transition duration-300">Ubicación</a>
-                    <a href="#contacto" class="text-noah-white hover:text-noah-gold transition duration-300">Contacto</a>
+                <div class="text-3xl font-bold text-noah-black flex items-center space-x-2">
+                    <span class="font-['Noto_Sans_JP']">Noah Sushi</span>
                 </div>
+                <ul class="flex gap-8 text-noah-black font-medium">
+                    <li><a href="#inicio" class="hover:text-noah-gold transition-colors">Inicio</a></li>
+                    <li><a href="https://drive.google.com/file/d/1Z6eajPIg23jegj5nz9R5X72syTvPZf9t/view" class="hover:text-noah-gold transition-colors">Menú</a></li>
+                    <li><a href="#ubicacion" class="hover:text-noah-gold transition-colors">Ubicación</a></li>
+                    <li><a href="#contacto" class="hover:text-noah-gold transition-colors">Contacto</a></li>
+                </ul>
             </div>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="inicio" class="pt-24 bg-noah-black">
-        <div class="container mx-auto px-6 py-16">
-            <div class="flex flex-col md:flex-row items-center">
-                <div class="md:w-1/2">
-                    <h1 class="text-4xl md:text-6xl font-bold text-noah-white mb-4">Descubre el auténtico sabor japonés</h1>
-                    <p class="text-xl text-noah-gold mb-8">La mejor experiencia de sushi en San José del Cabo</p>
-                    <a href="https://drive.google.com/file/d/1Z6eajPIg23jegj5nz9R5X72syTvPZf9t/view" target="_blank" class="bg-noah-red text-noah-white px-8 py-3 rounded-full hover:bg-red-700 transition duration-300">Ver Menú</a>
+    <!-- Hero Section Mejorado -->
+    <section id="inicio" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-noah-black to-noah-red text-noah-white pt-20">
+        <div class="container mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+                    Auténtica<br>experiencia<br>japonesa
+                </h1>
+                <p class="text-xl">En Los Cabos, creamos arte culinario japonés con los ingredientes más frescos del mar de Cortés y la tradición milenaria del sushi.</p>
+                <div class="flex gap-4">
+                    <a href="https://drive.google.com/file/d/1Z6eajPIg23jegj5nz9R5X72syTvPZf9t/view" class="bg-noah-gold text-noah-black px-8 py-3 rounded-full font-bold hover:bg-noah-white transition-colors">Ver Menú</a>
+                    <a href="#ubicacion" class="border-2 border-noah-white px-8 py-3 rounded-full font-bold hover:bg-noah-white hover:text-noah-black transition-colors">Ubicación</a>
                 </div>
-                <div class="md:w-1/4 mt-8 md:mt-0">
-                    <img src="https://scontent.fsjd2-1.fna.fbcdn.net/v/t39.30808-6/490315381_1074117068069554_1974415026275871482_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=qXm48_Y_jh4Q7kNvwEBwD6k&_nc_oc=Adk-_P4dgfW5-Q1CohWIuS7T-7dm4VZQEDfqt0wdmtsAunhHZZHCwfCshSwZ-Vd7794kSLY0zKonZtAs3ib3b2Tb&_nc_zt=23&_nc_ht=scontent.fsjd2-1.fna&_nc_gid=q45HaWQJq2UNsGjPG5N2Ow&oh=00_AfLIOaM3On1BEBuF0xOLXhz1NvKD6p1w2rbJPhK257BR-g&oe=683FD4EF" alt="Sushi variado" class="rounded-lg shadow-xl">
+            </div>
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-4.0.3" 
+                     alt="Sushi Noah" 
+                     class="rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500"/>
+            </div>
+        </div>
+    </section>
+
+<!-- Sección Ubicación -->
+<section id="ubicacion" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Nuestras Ubicaciones</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-4">Sucursal Zacatal</h3>
+                <p class="text-gray-600 mb-4">San José del Cabo, Zacatal</p>
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.8876234567891!2d-109.71309521234567!3d23.098841712345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af5bef00f5d837%3A0xef9825a64c3ebf8d!2sNoah%20Sushi%20Sucursal%20Zacatal!5e0!3m2!1ses!2smx!4v1234567890!5m2!1ses!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-bold mb-4">Sucursal Rosarito</h3>
+                <p class="text-gray-600 mb-4">San José del Cabo, Rosarito</p>
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.8876234567891!2d-109.70923931234567!3d23.067045012345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af5a7ea469c4e7%3A0x5fa09395bf26bb8f!2sNoah%20Sushi%20Sucursal%20Rosarito!5e0!3m2!1ses!2smx!4v1234567890!5m2!1ses!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Horarios Section -->
+    <section class="py-16 bg-noah-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-noah-black text-noah-white p-8 rounded-3xl shadow-xl">
+                    <h3 class="text-2xl font-bold mb-6">Sucursal Zacatal</h3>
+                    <p class="mb-4">Lunes a Miércoles: 1:00 PM - 10:00 PM</p>
+                    <p class="mb-4">Viernes a Domingo: 1:00 PM - 10:00 PM</p>
+                    <p class="text-noah-gold">Cerrado los Jueves</p>
+                </div>
+                <div class="bg-noah-black text-noah-white p-8 rounded-3xl shadow-xl">
+                    <h3 class="text-2xl font-bold mb-6">Sucursal Rosarito</h3>
+                    <p class="mb-4">348 P.º de Barlovento</p>
+                    <p class="mb-4">Junto a Oxxo cerca de Plaza Moctezuma</p>
+                    <p class="mb-4">Lunes a Sábado: 1:00 PM - 10:00 PM</p>
+                    <p class="text-noah-gold">Cerrado los Domingos</p>
                 </div>
             </div>
         </div>
@@ -81,29 +131,6 @@
       </div>
     </div>
   </section>
-
-<!-- Sección Ubicación -->
-<section id="ubicacion" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-12">Nuestras Ubicaciones</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h3 class="text-xl font-bold mb-4">Sucursal Zacatal</h3>
-                <p class="text-gray-600 mb-4">San José del Cabo, Zacatal</p>
-                <div class="aspect-w-16 aspect-h-9">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.8876234567891!2d-109.71309521234567!3d23.098841712345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af5bef00f5d837%3A0xef9825a64c3ebf8d!2sNoah%20Sushi%20Sucursal%20Zacatal!5e0!3m2!1ses!2smx!4v1234567890!5m2!1ses!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-lg">
-                <h3 class="text-xl font-bold mb-4">Sucursal Rosarito</h3>
-                <p class="text-gray-600 mb-4">San José del Cabo, Rosarito</p>
-                <div class="aspect-w-16 aspect-h-9">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.8876234567891!2d-109.70923931234567!3d23.067045012345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86af5a7ea469c4e7%3A0x5fa09395bf26bb8f!2sNoah%20Sushi%20Sucursal%20Rosarito!5e0!3m2!1ses!2smx!4v1234567890!5m2!1ses!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
     <!-- Pie de página -->
     <footer class="bg-noah-black text-noah-white py-12">
